@@ -60,6 +60,42 @@ h6 {
   --gradient2: 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%);
 }
 
+body{
+  font-family: var(--Josefin-Sans);
+}
+
+.container{
+  max-width: 90rem;
+  margin: 3rem 5rem;
+  padding: 1.24rem;
+}
+
+.heading{
+  margin-top: 5rem;
+  line-height: 1;
+
+}
+
+.heading .heading__soft-red{
+  font-size: 4.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--soft-red);
+}
+
+.heading .heading__normal{
+  display: block;
+  font-size: 4.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--dark-grayish-red);
+}
+
+
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
