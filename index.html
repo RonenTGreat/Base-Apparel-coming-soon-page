@@ -16,36 +16,23 @@
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
+    <header><img src="/images/logo.svg" alt="logo" /></header>
     <main class="container">
-      <section class="details">
-        <img src="/images/logo.svg" alt="" />
-        <header class="heading">
-          <h1>
-            <span class="heading__soft-red">We're</span>
-            <span class="heading__normal">coming</span>
-            <span class="heading__normal">soon</span>
-          </h1>
-        </header>
-        <p class="card__soft-red">
+      <section class="left">
+        <h1>We're<br> <span>coming<br> soon</span></h1>
+        <p>
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our
           launch deals.
-        </p>
-        <div class="form">
-          <form action="">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-            />
-
-            <button><img src="/images/icon-arrow.svg" alt="submit" /></button>
+          <form action="#">
+            <input type="email" name="email" id="email" placeholder="Email Address">
+            <img src="./images/icon-error.svg" class="error-icon" alt="error-icon">
+            <button type="submit"><img src="/images/icon-arrow.svg" alt="submit"></button>
+            <p class="error-text">Please provide a valid email</p>
           </form>
-          <p class="error">Please provide a valid email</p>
-        </div>
+        </p>
       </section>
-      <section class="img"><img src="./images/hero-desktop.jpg" alt=""></section>
+      <section class="right"></section>
     </main>
 
     <footer>
