@@ -187,6 +187,17 @@ header img{
   display: none;
 }
 
+.container form.error .error-icon{
+  display: block;
+}
+
+.container form.error .error-text{
+  display: block;
+}
+.container form.error input{
+  border: 2px var(--soft-red) solid;
+}
+
 @media only screen and (min-width: 768px) {
   header{
     position: absolute;
