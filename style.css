@@ -56,35 +56,40 @@ h6 {
   --soft-red: hsl(0, 93%, 68%);
   --dark-grayish-red: hsl(0, 6%, 24%);
   --Josefin-Sans: "Josefin Sans", sans-serif;
-  --graident1: 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+  --gradient1: 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
   --gradient2: 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%);
 }
 
-body{
+body {
   font-family: var(--Josefin-Sans);
 }
 
-.container{
-  max-width: 90rem;
+.container {
+  max-width: 80rem;
   margin: 3rem 5rem;
-  padding: 1.24rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 80px 60px 100px 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.heading{
+.details{
+  padding: 3rem;
+}
+
+.heading {
   margin-top: 5rem;
   line-height: 1;
-
 }
 
-.heading .heading__soft-red{
+.heading .heading__soft-red {
   font-size: 4.5rem;
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  color: var(--soft-red);
+  letter-spacing: 0.6rem;
+  color: var(--desaturated-red);
 }
 
-.heading .heading__normal{
+.heading .heading__normal {
   display: block;
   font-size: 4.5rem;
   font-weight: 600;
@@ -93,8 +98,48 @@ body{
   color: var(--dark-grayish-red);
 }
 
+.card__soft-red {
+  max-width: 28rem;
+  font-size: 1rem;
+  color: var(--desaturated-red);
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
 
+.form {
+  position: relative;
+}
 
+#email {
+  width: 75%;
+  border-radius: 3rem;
+  padding: 1rem;
+  border: 1px var(--desaturated-red) solid;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  padding: 1rem;
+  color: var(--desaturated-red);
+}
+
+button {
+  position: absolute;
+  left: 20rem;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  border-radius: 3.5rem;
+  border: 3px transparent solid;
+}
+
+.error {
+  padding: 0.5rem 2rem;
+  color: var(--soft-red);
+  display: none;
+}
 
 .attribution {
   font-size: 11px;
